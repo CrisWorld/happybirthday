@@ -1,0 +1,106 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body{
+    background-image: url(/img/font/bg.png);
+}
+html::-webkit-scrollbar{
+    display: none;
+}
+.happy, .birthday{
+    display: flex;
+    margin-top: 17px;
+    justify-content: center;
+    align-items: center;
+}
+.cake{
+    margin: 40px 0 0 13px;
+    animation: rotation 1.3s steps(2) infinite;
+}
+@keyframes rotation{
+    from {
+        transform: rotate(10deg);
+    }
+    to{
+        transform: rotate(-10deg);
+    }
+}
+.lifeimage{
+    position: relative;
+    height: 400px;
+}
+.lifeimage .image{
+    position: absolute;
+    right: 0;
+    transform: translate(0, -30%);
+    filter: drop-shadow(30px 10px 10px rgba(0, 0, 0, 0.3));;
+}
+.lifeimage .message{
+    position: absolute;
+    opacity: 0;
+    animation: slow .9s ease-in-out 1s forwards;
+}
+@keyframes slow{
+    from{
+        top: 130px;
+        opacity: 0;
+    }
+    to{
+        top: 110px;
+        opacity: 100%;
+    }
+}
+.letter{
+    margin-top: 50px;
+    width: 100%;
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+.letter img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: 1s ease-in-out;
+}
+.tangle{
+    transform: translate(-50%,-50%);
+}
+.triangle{
+    top: 0px !important;
+    transform: translate(-50%,0) !important;
+}
+.sign{
+    transition: 0.3s ease-in-out;
+    top: 40% !important;
+    transform: translate(-60px,-50%) !important;
+}
+.sign:active{
+    scale: 1.1;
+}
+.content{
+    position: relative;
+    display: none;
+}
+.letter-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.slide{
+    display: flex;
+    height: 127px;
+    width: 100%;
+    flex-direction: column !important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    white-space: nowrap;
+    scroll-snap-type: Y mandatory;
+    scroll-snap-align: start;
+}
+.slide img{
+    scroll-snap-align: center;
+}
+
