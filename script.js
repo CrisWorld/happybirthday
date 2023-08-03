@@ -14,7 +14,7 @@ function animation(){
     let birthday = document.getElementById('birthday');
     setInterval(function(){
         happy.innerHTML = `
-        <img src="/img/font/happy/${data.H[Math.floor(Math.random()*3)]}">
+        <img src="img/font/happy/${data.H[Math.floor(Math.random()*3)]}">
         <img src="img/font/happy/${data.A[Math.floor(Math.random()*3)]}">
         <img src="img/font/happy/${data.P[Math.floor(Math.random()*3)]}">
         <img src="img/font/happy/${data.P[Math.floor(Math.random()*3)]}">
