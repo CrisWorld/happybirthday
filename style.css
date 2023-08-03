@@ -3,7 +3,7 @@ html, body {
     margin: 0;
 }
 body{
-    background-image: url(/img/font/bg.png);
+    background-image: url(img/font/bg.png);
 }
 html::-webkit-scrollbar{
     display: none;
