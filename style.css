@@ -91,7 +91,8 @@ html::-webkit-scrollbar{
 }
 .slide{
     display: flex;
-    height: 127px;
+    height: 130px;
+    align-items: center;
     width: 100%;
     flex-direction: column !important;
     overflow-y: scroll;
@@ -102,5 +103,6 @@ html::-webkit-scrollbar{
 }
 .slide img{
     scroll-snap-align: center;
+    height: 130px;
 }
 
